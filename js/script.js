@@ -35,12 +35,12 @@ createApp({
         prev() {
             this.activeSlide--;
             if (this.activeSlide < 0) {
-                this.activeSlide = slides.length - 1;
+                this.activeSlide = this.slides.length - 1;
             }
         },
         next() {
             this.activeSlide++;
-            if (this.activeSlide === slides.length) {
+            if (this.activeSlide === this.slides.length) {
                 this.activeSlide = 0;
             }
         }
